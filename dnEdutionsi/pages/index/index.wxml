@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="home">
+  <swiper indicator-dots autoplay interval="{{3000}}" indicator-color="#fff" indicator-active-color="#f00">
+    <block wx:for="{{lunbo}}" wx:key="*this">
+      <swiper-item>
+      <image src="{{imgBaseUrl+item.img}}" mode="widthFix"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <Title topLeft="朝夕名师" topRight="在线直播" info="直播互动学习，感受技术韵律"></Title>
+  <!-- 内容 -->
+  <view class="content">
+    <view class="content-item" wx:for="{{lunbo}}" wx:key="*this">
+      <image src="{{ imgBaseUrl+item.img }}" mode="widthFix"></image>
+      <text class="item-text">{{ item.text }}</text>
+    </view>
+  </view>
+  <!-- 加入朝夕 -->
+  <Title topLeft="加入" topRight="朝夕" info="让每个人的职业生涯不留遗憾"></Title>
+  <view class="enter">
+    <view class="enter-item" wx:for="{{ entryList }}" :key="id">
+      <image src="{{ imgBaseUrl+item.img }}" mode="widthFix"></image>
+      <view class="item-info">
+        <view class="title">{{ item.title }}</view>
+        <view class="text">{{ item.text }}</view>
+      </view>
+    </view>
+  </view>
+   <!-- 合作伙伴 -->
+   <Title topLeft="合作" topRight="伙伴" info="人生的道路上伙伴的支撑不可或缺"></Title>
+   <view class="part">
+    <image wx:for="{{parList}}"  wx:key="*this"  src="{{imgBaseUrl+item.img}}" mode="widthFix"></image>
+   </view>
+</view>

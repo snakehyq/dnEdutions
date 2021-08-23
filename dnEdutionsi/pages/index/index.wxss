@@ -1,0 +1,54 @@
+/**index.wxss**/
+.home {
+  padding-bottom: 120rpx;
+}
+.home swiper {
+  width: 100%;
+}
+.home .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.content .content-item {
+  width: 49%;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.content .content-item  image {
+  margin-bottom: 10rpx;
+  width: 100%;
+}
+.content .content-item  .item-text {
+  font-size: 34rpx;
+  color: #3b3737;
+}
+.enter .enter-item {
+  display: flex;
+  padding: 20rpx;
+}
+.enter-item image {
+  width: 300rpx;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+}
+.enter-item .item-info {
+  flex: 1;
+  font-size: 42rpx;
+}
+.item-info .title {
+  margin: 10rpx 0;
+}
+.item-info .text {
+  color: #5e5555;
+  font-size: 32rpx;
+}
+.part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.part image {
+  width: 24%;
+}

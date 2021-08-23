@@ -1,0 +1,27 @@
+<!--pages/personalContact/index.wxml-->
+<view class="personal-contact">
+  <mp-cells>
+      <mp-cell title="联系电话：">
+        <text>{{ contactInfo.contactNumber }}</text>
+      </mp-cell>
+      <mp-cell title="企业微信：">
+        <text>{{ contactInfo.wx }}</text>
+      </mp-cell>
+      <mp-cell title="咨询QQ：">
+        <text>{{ contactInfo.QQ }}</text>
+      </mp-cell>
+      <mp-cell title="咨询微信：">
+        <text>{{ contactInfo.wx }}</text>
+      </mp-cell>
+      <mp-cell title="电子邮箱：">
+        <text>{{ contactInfo.email }}</text>
+      </mp-cell>
+      <mp-cell title="网站备案：">
+        <text>{{ contactInfo.recordNum }}</text>
+      </mp-cell>
+    </mp-cells>
+    <view class="imgs">
+      <image mode="widthFix" src="{{ imgBaseUrl+contactInfo.erCode }}"></image>
+      <image mode="widthFix" src="{{ imgBaseUrl+contactInfo.qrCode }}"></image>
+    </view>
+</view>

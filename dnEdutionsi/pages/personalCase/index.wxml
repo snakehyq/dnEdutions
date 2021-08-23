@@ -1,0 +1,24 @@
+<!--pages/personalCase/index.wxml-->
+<view class="personalCase">
+  <Title topLeft="VIP" topRight="资源下载" info="VIP学员可获取对应课程的视频源码"></Title>
+    <view class="content">
+      <view bindtap="downLoad" class="content-item" wx:for="{{vipList}}" wx:key="id">
+        <image src="{{ imgBaseUrl+item.imageUrl }}" mode="widthFix"></image>
+        <text class="item-text">{{ item.name }}</text>
+      </view>
+    </view>
+    <Title topLeft="配套" topRight="资源下载" info="VIP学员可获取对应的配套学习资料"></Title>
+    <view class="content">
+      <view   bindtap="downLoad" class="content-item" wx:for="{{ptList}}" wx:key="id">
+        <image src="{{ imgBaseUrl+item.imageUrl }}" mode="widthFix"></image>
+        <text class="item-text">{{ item.name }}</text>
+      </view>
+    </view>
+    <Title topLeft="视频课" topRight="资源下载" info="独立的小额视频课资源"></Title>
+    <view class="content">
+      <view  bindtap="downLoad" class="content-item" wx:for="{{videoList}}" wx:key="id">
+        <image src="{{ imgBaseUrl+item.imageUrl }}" mode="widthFix"></image>
+        <text class="item-text">{{ item.name }}</text>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/register/index.wxss */
+.register .btn {
+  margin: 40rpx auto;
+}

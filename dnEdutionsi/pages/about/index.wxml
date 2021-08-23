@@ -1,0 +1,25 @@
+<!--pages/about/index.wxml-->
+<view class="about">
+  <image mode="widthFix" src="https://www.zhaoxiedu.net/static/imgs/banner/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC.jpg">
+  </image>
+  <view class="company">
+    <Title topLeft="公司介绍" info="我们的互联网+时代"></Title>
+    <image src="" mode="widthFix" src="{{ imgBaseUrl+aboutInfo.imageUrl }}"></image>
+    <view class="title">
+      <text>{{ aboutInfo.introduce }}</text>
+    </view>
+    <view class="info">
+      <text>{{ aboutInfo.detail }}</text>
+    </view>
+  </view>
+  <view class="teacher">
+    <Title topLeft="名师团队" info="仰之弥高，钻之弥坚" message="瞻之在前，忽焉在后"></Title>
+    <view class="workerList">
+      <view class="worker-item" wx:for="{{ workers }}" :key="this">
+        <image src="{{ imgBaseUrl+item.img }}" mode="widthFix"></image>
+        <view class="title"> {{ item.name }}</view>
+        <text>{{ item.introduce }}</text>
+      </view>
+    </view>
+  </view>
+</view>

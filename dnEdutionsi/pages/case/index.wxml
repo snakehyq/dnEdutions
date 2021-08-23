@@ -1,0 +1,20 @@
+<!--pages/case/index.wxml-->
+<view class="case">
+  <image src="https://www.zhaoxiedu.net/static/imgs/banner/%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%BF%83.jpg" mode="widthFix">
+  </image>
+  <Title topLeft="课程列表" info="仰之弥高，钻之弥坚" message="持续更新，咨询有礼"></Title>
+  <view class="case-list">
+    <view class="case-item"  wx:for="{{ courseList }}" :key="this">
+      <view class="title">
+        <text>{{ item.courseName }}</text>
+        <button type="primary" size="mini" open-type="contact">咨询</button>
+      </view>
+      <view class="enter-item">
+        <image src="{{ imgBaseUrl+item.img }}"></image>
+        <view class="item-info">
+          <view class="text">{{ item.describe }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

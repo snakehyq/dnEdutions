@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "Title": "/components/Title/title",
+    "mp-cells": "weui-miniprogram//cells/cells",
+    "mp-cell": "weui-miniprogram//cell/cell"
+  }
+}

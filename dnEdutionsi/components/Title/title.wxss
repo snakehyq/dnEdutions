@@ -1,0 +1,23 @@
+/* components/title/title.wxss */
+.title {
+  text-align: center;
+}
+.title .title-top{
+  height: 150rpx;
+  line-height: 150rpx;
+  font-weight: bold;
+  font-size: 46rpx;
+}
+.title .title-top .left {
+  text-shadow: 2rpx 6rpx 4rpx #c0b7b7;
+  color: #000;
+  padding-right: 10rpx;
+}
+.title .title-top .right {
+  text-shadow: 2rpx 6rpx 4rpx #c0b7b7;
+  color:darksalmon;
+}
+.title .baseInfo {
+  color: #c0b7b7;
+  padding-bottom: 15rpx;
+}

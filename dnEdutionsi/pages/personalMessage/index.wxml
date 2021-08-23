@@ -1,0 +1,24 @@
+<!--pages/personalMessage/index.wxml-->
+<view class="personal-message">
+  <mp-cells>
+      <mp-cell prop="QQ" title="QQ" ext-class="">
+       <text>54586554</text>
+      </mp-cell>
+      <mp-cell prop="name" title="昵称" ext-class="">
+        <input bindinput="formInputChange" data-field="name" class="weui-input" placeholder="请输入昵称"/>
+        <button  slot="footer" type="primary" size="mini"  plain>保存</button>
+      </mp-cell>
+      <mp-cell prop="sex" title="性别" ext-class="">
+        <picker bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+          <view>{{accounts[accountIndex]}}</view>
+        </picker>
+        <button  slot="footer" type="primary" size="mini"  plain>保存</button>
+      </mp-cell>
+      <mp-cell prop="registerTime" title="注册时间" ext-class="">
+       <text slot="footer">2021-01-01</text>
+      </mp-cell>
+      <mp-cell prop="loginTime" title="登录时间" ext-class="">
+       <text slot="footer">2021-08-23</text>
+      </mp-cell>
+    </mp-cells>
+</view>

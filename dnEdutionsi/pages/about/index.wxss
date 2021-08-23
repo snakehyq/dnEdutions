@@ -1,0 +1,39 @@
+/* pages/about/index.wxss */
+.about  {
+  padding-bottom: 120rpx;
+}
+.company .title{
+  font-size: 35rpx;
+  padding: 20rpx;
+  color: #000;
+  font-weight: bold;
+}
+.company .info {
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.workerList {
+  padding: 0 20rpx;
+}
+.workerList > view {
+  width: 100%;
+  font-size: 26rpx;
+  line-height: 48rpx;
+  text-align: center;
+  border: 1px solid #efefef;
+  box-shadow: 4rpx 4rpx 4rpx rgba(98,98,98,0.5);
+  margin-bottom: 30rpx;
+}
+.worker-item image {
+  width: 100%;
+}
+.worker-item .title {
+  font-weight: 600;
+  font-size: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.worker-item text {
+  padding: 20rpx;
+  padding-top: 0rpx;
+}

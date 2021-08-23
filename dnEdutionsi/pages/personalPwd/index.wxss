@@ -1,0 +1,8 @@
+/* pages/personalPwd/index.wxss */
+.personal-pwd {
+  padding: 40rpx;
+}
+.personal-pwd  .btn {
+  margin-top: 40rpx;
+  width: 100%;
+}

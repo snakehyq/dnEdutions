@@ -1,0 +1,36 @@
+/* pages/case/index.wxss */
+.case {
+  padding-bottom: 120rpx;
+}
+.case .case-list {
+  padding: 15rpx;
+}
+.case .case-item {
+  margin-top: 30rpx;
+  border-bottom: 1px solid #efefef;
+}
+.case  .enter-item {
+  display: flex;
+  padding: 20rpx;
+}
+.case-item .title {
+  display: flex;
+  justify-content: space-between;
+}
+.case-item .title button {
+  margin: 0;
+}
+.enter-item image {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+}
+.enter-item .item-info {
+  flex: 1;
+  font-size: 42rpx;
+}
+.item-info .text {
+  color: #5e5555;
+  font-size: 32rpx;
+}

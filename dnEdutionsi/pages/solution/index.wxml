@@ -1,0 +1,12 @@
+<!--pages/solution/index.wxml-->
+<view class="solution">
+  <image src="https://www.zhaoxiedu.net/static/imgs/banner/%E8%AF%9A%E8%81%98%E8%8B%B1%E6%89%8D.jpg" mode="widthFix"></image>
+  <Title topLeft="诚聘" topRight="英才" info="广阔的舞台和热情额观众" message="在等待着你来挥洒才华"></Title>
+  <view class="solutionList">
+    <view class="solution-item" wx:for="{{ solutionList }}" :key="id">
+      <image src="{{ imgBaseUrl + item.img }}" mode="widthFix"></image>
+      <view class="title">{{ item.title }}</view>
+      <view class="text">{{ item.text }}</view>
+    </view>
+  </view>
+</view>

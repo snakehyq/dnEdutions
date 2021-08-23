@@ -1,0 +1,39 @@
+/* pages/personal/index.wxss */
+.personal {
+  padding-bottom: 120rpx;
+}
+.personal .no-login .login-title{
+  text-align: center;
+  color: #000000;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.personal .no-login .login-title .title-text {
+  display: inline-block;
+  color: sandybrown;
+}
+.personal .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.content .content-item {
+  width: 49%;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.content .content-item  image {
+  margin-bottom: 10rpx;
+  width: 100%;
+}
+.content .content-item  .item-text {
+  font-size: 34rpx;
+  color: #3b3737;
+}
+.personal .login .btn {
+  padding: 40rpx;
+}
+.personal .login .btn button {
+  width: 100%;
+}

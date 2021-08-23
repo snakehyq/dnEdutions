@@ -1,0 +1,4 @@
+/* pages/personalMessage/index.wxss */
+.personal-message .weui-cell__hd {
+  width: 160rpx;
+}

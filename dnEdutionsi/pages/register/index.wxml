@@ -1,0 +1,35 @@
+<!--pages/register/index.wxml-->
+<view class="register">
+  <Title topLeft="注册" topRight="朝夕" info="VIP学员可获取对应课程的视频资源"></Title>
+  <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+    <mp-cells>
+      <mp-cell prop="name" title="昵称">
+        <input bindinput="formInputChange" data-field="name" class="weui-input" placeholder="请输入昵称" />
+      </mp-cell>
+      <mp-cell prop="QQ" title="QQ">
+        <input bindinput="formInputChange" data-field="QQ" class="weui-input" placeholder="请输入QQ" />
+      </mp-cell>
+      <mp-cell prop="mobile" title="手机号">
+        <input bindinput="formInputChange" data-field="mobile" class="weui-input" placeholder="请输入手机号" />
+      </mp-cell>
+      <mp-cell prop="sex" title="性别">
+        <picker bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+          <view>{{accounts[accountIndex]}}</view>
+        </picker>
+      </mp-cell>
+      <mp-cell prop="pwd" title="密码">
+        <input bindinput="formInputChange" data-field="pwd" class="weui-input" placeholder="请输入密码" />
+      </mp-cell>
+      <mp-cell prop="pwdd" title="密码">
+        <input bindinput="formInputChange" data-field="pwdd" class="weui-input" placeholder="请再次输入密码" />
+      </mp-cell>
+      <mp-cell prop="code" title="验证码" ext-class=" weui-cell_vcode">
+        <input bindinput="formInputChange" data-field="code" class="weui-input" placeholder="请输入验证码" />
+        <image bindtap="changeCode" slot="footer" class="weui-vcode-img"
+          src="{{ 'https://test.zhaoxiedu.net/api/login/CreateValidateCode/?t='+imgValidateCode }}"
+          style="width: 216rpx;"></image>
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+  <button class="weui-btn btn" type="primary" bindtap="submitForm">注册</button>
+</view>

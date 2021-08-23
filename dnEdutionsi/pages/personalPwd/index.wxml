@@ -1,0 +1,5 @@
+<!--pages/personalPwd/index.wxml-->
+<view class="personal-pwd">
+  <input bindinput="formInputChange" data-field="pwd" class="weui-input" placeholder="请输入密码" />
+  <button class="weui-btn btn" type="primary" bindtap="submitForm">修改密码</button>
+</view>

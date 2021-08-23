@@ -1,0 +1,19 @@
+/* pages/solution/index.wxss */
+.solution {
+  padding-bottom: 120rpx;
+}
+.solution .solution-item {
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.solutionList .solution-item image {
+  width: 100%;
+}
+.solution-item view {
+  font-size: 26rpx;
+  line-height: 48rpx;
+  padding:0 20rpx;
+}
+.solution-item .title {
+  font-weight: 600;
+}

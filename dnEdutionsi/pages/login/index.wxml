@@ -1,0 +1,22 @@
+<!--pages/login/index.wxml-->
+<view class="login">
+  <Title topLeft="登录" topRight="朝夕" info="视频课资源下载"></Title>
+  <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+    <mp-cells>
+      <mp-cell prop="QQ" title="QQ" ext-class="">
+        <input bindinput="formInputChange" data-field="QQ" class="weui-input" placeholder="请输入QQ" />
+      </mp-cell>
+      <mp-cell prop="pwd" title="密码" ext-class="">
+        <input bindinput="formInputChange" data-field="pwd" class="weui-input" placeholder="请输入密码" />
+      </mp-cell>
+      <mp-cell prop="code" title="验证码" ext-class=" weui-cell_vcode">
+        <input bindinput="formInputChange" data-field="code" class="weui-input" placeholder="请输入验证码" />
+        <image bindtap="changeCode" slot="footer" class="weui-vcode-img" src="{{ 'https://test.zhaoxiedu.net/api/login/CreateValidateCode/?t='+imgValidateCode }}" style="width: 216rpx;"></image>
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+  <button class="weui-btn btn" type="primary" bindtap="submitForm">登录</button>
+  <view class="register">
+    <navigator url="/pages/register/index">暂无账号，请先注册</navigator>
+  </view>
+</view>

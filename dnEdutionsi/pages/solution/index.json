@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "诚聘英才",
+  "usingComponents": {
+    "Title": "/components/Title/title"
+  }
+}

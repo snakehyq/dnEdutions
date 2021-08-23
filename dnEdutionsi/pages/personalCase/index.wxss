@@ -1,0 +1,20 @@
+/* pages/personalCase/index.wxss */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.content .content-item {
+  width: 49%;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.content .content-item  image {
+  margin-bottom: 10rpx;
+  width: 100%;
+}
+.content .content-item  .item-text {
+  font-size: 34rpx;
+  color: #3b3737;
+}

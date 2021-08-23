@@ -1,0 +1,11 @@
+<!--components/title/title.wxml-->
+<view class="title">
+  <view class="title-top">
+    <text class="left">{{ topLeft }}</text>
+    <text class="right">{{ topRight }}</text>
+  </view>
+  <view class="baseInfo">
+    <view class="title-info">{{ info }}</view>
+    <view class="title-message">{{ message }}</view>
+  </view>
+</view>

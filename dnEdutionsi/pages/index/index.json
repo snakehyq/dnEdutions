@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "朝夕教育",
+  "usingComponents": {
+    "Title": "/components/Title/title"
+  }
+}

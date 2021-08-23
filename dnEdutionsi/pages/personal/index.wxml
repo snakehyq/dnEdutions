@@ -1,0 +1,44 @@
+<!--pages/personal/index.wxml-->
+<view class="personal">
+  <image src="https://www.zhaoxiedu.net/static/imgs/banner/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.jpg" mode="widthFix">
+  </image>
+  <view class="login" wx:if="{{ token }}">
+    <mp-cells>
+      <mp-cell link url="/pages/personalCase/index" value="课程资料"></mp-cell>
+      <mp-cell link url="/pages/personalMessage/index" value="个人信息"></mp-cell>
+      <mp-cell link url="/pages/personalPwd/index" value="修改密码"></mp-cell>
+      <mp-cell link url="/pages/personalContact/index" value="联系我们"></mp-cell>
+    </mp-cells>
+    <view class="btn">
+      <button class="weui-btn" type="primary" bindtap="outLogin">退出登录</button>
+    </view>
+  </view>
+  <view class="no-login" wx:else>
+    <view class="login-title">
+      <text>你尚未登录，点我</text>
+      <navigator class="title-text" url="/pages/login/index">登录</navigator>
+    </view>
+    <Title topLeft="VIP" topRight="资源下载" info="VIP学员可获取对应课程的视频源码"></Title>
+    <view class="content">
+      <view class="content-item" wx:for="{{vipList}}" wx:key="id">
+        <image src="{{ imgBaseUrl+item.imageUrl }}" mode="widthFix"></image>
+        <text class="item-text">{{ item.name }}</text>
+      </view>
+    </view>
+    <Title topLeft="配套" topRight="资源下载" info="VIP学员可获取对应的配套学习资料"></Title>
+    <view class="content">
+      <view class="content-item" wx:for="{{ptList}}" wx:key="id">
+        <image src="{{ imgBaseUrl+item.imageUrl }}" mode="widthFix"></image>
+        <text class="item-text">{{ item.name }}</text>
+      </view>
+    </view>
+    <Title topLeft="视频课" topRight="资源下载" info="独立的小额视频课资源"></Title>
+    <view class="content">
+      <view class="content-item" wx:for="{{videoList}}" wx:key="id">
+        <image src="{{ imgBaseUrl+item.imageUrl }}" mode="widthFix"></image>
+        <text class="item-text">{{ item.name }}</text>
+      </view>
+    </view>
+  </view>
+
+</view>

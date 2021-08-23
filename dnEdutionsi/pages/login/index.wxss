@@ -1,0 +1,15 @@
+/* pages/login/index.wxss */
+.login .btn {
+  margin-top: 50rpx;
+}
+.login .weui-label {
+  width: 140rpx;
+}
+.login .register {
+  margin-top: 20rpx;
+  padding-right: 20rpx;
+  text-align: right;
+  color: #1aad19;
+  text-decoration: underline;
+  font-size: 32rpx;
+}

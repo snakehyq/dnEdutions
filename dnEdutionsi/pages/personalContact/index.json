@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "联系我们",
+  "usingComponents": {
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell"
+  }
+}
